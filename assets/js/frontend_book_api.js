@@ -87,7 +87,9 @@ window.FrontendBookApi = window.FrontendBookApi || {};
                     }
 
                     var providerTimezone = provider.timezone;
-                    var selectedTimezone = $('#select-timezone').val();
+                    // alterado para nao apresentrar opcoes de timezone
+                    // var selectedTimezone = $('#select-timezone').val();
+                    var selectedTimezone = 'America/Sao_Paulo';
                     var timeFormat = GlobalVariables.timeFormat === 'regular' ? 'h:mm a' : 'HH:mm';
 
                     response.forEach(function (availableHour) {

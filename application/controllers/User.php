@@ -114,7 +114,7 @@ class User extends EA_Controller {
         {
             if ( ! $this->input->post('username') || ! $this->input->post('password'))
             {
-                throw new Exception('Invalid credentials given!');
+                throw new Exception('Nome de usuário ou Senha inválidos!');
             }
 
             $user_data = $this->user_model->check_login($this->input->post('username'), $this->input->post('password'));

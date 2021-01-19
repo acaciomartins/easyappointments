@@ -213,11 +213,10 @@
 
                         <div class="col-12 col-md-6">
                             <div id="select-time">
-                                <div class="form-group">
+                                <div class="form-group" style="display: none">
                                     <label for="select-timezone"><?= lang('timezone') ?></label>
                                     <?= render_timezone_dropdown('id="select-timezone" class="form-control" value="UTC"'); ?>
                                 </div>
-
                                 <div id="available-hours"></div>
                             </div>
                         </div>
@@ -402,11 +401,11 @@
                         <a href="https://easyappointments.org" target="_blank">Easy!Appointments</a>
                     </span>
 
-                    <span class="footer-options">
+                    <span class="footer-options" style="display: none">
                         <span id="select-language" class="badge badge-secondary">
                             <i class="fas fa-language mr-2"></i>
                             <?= ucfirst(config('language')) ?>
-                        </span>
+                        </span> 
 
                         <a class="backend-link badge badge-primary" href="<?= site_url('backend'); ?>">
                             <i class="fas fa-sign-in-alt mr-2"></i>

@@ -285,20 +285,19 @@ window.GeneralFunctions = window.GeneralFunctions || {};
             $(this).toggleClass('active');
         });
 
-        $(document).on('click', 'li.language', function () {
+        // $(document).on('click', 'li.language', function () {
             // Change language with ajax call and refresh page.
             var url = GlobalVariables.baseUrl + '/index.php/backend_api/ajax_change_language';
-
             var data = {
                 csrfToken: GlobalVariables.csrfToken,
-                language: $(this).attr('data-language')
+                language: 'portuguese-br'
+                // language: $(this).attr('data-language')
             };
-
             $.post(url, data)
                 .done(function () {
                     document.location.reload(true);
                 });
-        });
+        // });
 
         $(document).on('click', function () {
             $element.popover('hide');

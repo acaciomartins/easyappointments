@@ -505,7 +505,6 @@ window.FrontendBook = window.FrontendBook || {};
 
         // Appointment Details
         var selectedDate = $('#select-date').datepicker('getDate');
-
         if (selectedDate !== null) {
             selectedDate = GeneralFunctions.formatDate(selectedDate, GlobalVariables.dateFormat);
         }
@@ -541,10 +540,6 @@ window.FrontendBook = window.FrontendBook || {};
                         $('<br/>'),
                         $('<span/>', {
                             'text': EALang.start + ': ' + selectedDate + ' ' + $('.selected-hour').text()
-                        }),
-                        $('<br/>'),
-                        $('<span/>', {
-                            'text': EALang.timezone + ': ' + $('#select-timezone option:selected').text()
                         }),
                         $('<br/>'),
                         $('<span/>', {

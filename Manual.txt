@@ -1,0 +1,4 @@
+cd /home/dev/agendamentos/eagenda/easyappointments
+
+build e deploy
+sudo npx gulp build && docker cp build/ easyappointments-server:/var/www/htm
