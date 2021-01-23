@@ -6,15 +6,15 @@
 
     <title><?= isset($page_title) ? $page_title : lang('backend_section') ?> | Easy!Appointments</title>
 
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('../assets/ext/bootstrap/css/bootstrap.min.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('../assets/ext/jquery-ui/jquery-ui.min.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('../assets/ext/trumbowyg/ui/trumbowyg.min.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('../assets/ext/select2/select2.min.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('../assets/css/backend.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('../assets/css/general.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/ext/bootstrap/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/ext/jquery-ui/jquery-ui.min.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/ext/trumbowyg/ui/trumbowyg.min.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/ext/select2/select2.min.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/css/backend.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/css/general.css') ?>">
 
-    <link rel="icon" type="image/x-icon" href="<?= asset_url('../assets/img/favicon.ico') ?>">
-    <link rel="icon" sizes="192x192" href="<?= asset_url('../assets/img/logo.png') ?>">
+    <link rel="icon" type="image/x-icon" href="<?= asset_assets_url('assets/img/favicon.ico') ?>">
+    <link rel="icon" sizes="192x192" href="<?= asset_assets_url('assets/img/logo.png') ?>">
 
     <script>
         // Global JavaScript Variables - Used in all backend pages.
@@ -22,24 +22,24 @@
         var EALang = <?= json_encode($this->lang->language) ?>;
     </script>
 
-    <script src="<?= asset_url('../assets/ext/jquery/jquery.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/popper/popper.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/tippy/tippy-bundle.umd.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/jquery-ui/jquery-ui.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/moment/moment.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/moment/moment-timezone-with-data.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/datejs/date.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/trumbowyg/trumbowyg.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/select2/select2.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/fontawesome/js/fontawesome.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/fontawesome/js/solid.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/jquery/jquery.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/popper/popper.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/tippy/tippy-bundle.umd.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/jquery-ui/jquery-ui.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/moment/moment.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/moment/moment-timezone-with-data.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/datejs/date.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/trumbowyg/trumbowyg.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/select2/select2.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/fontawesome/js/fontawesome.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/fontawesome/js/solid.min.js') ?>"></script>
 </head>
 
 <body>
 <nav id="header" class="navbar navbar-expand-md navbar-dark">
     <div id="header-logo" class="navbar-brand">
-        <img src="<?= base_url('../assets/img/logo.png') ?>">
+        <img src="<?= base_url('assets/img/logo.png') ?>">
         <h6>EASY!APPOINTMENTS</h6>
         <small>Open Source Appointment Scheduler</small>
     </div>

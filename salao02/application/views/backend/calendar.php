@@ -1,16 +1,16 @@
-<link rel="stylesheet" type="text/css" href="<?= asset_url('/assets/ext/jquery-fullcalendar/fullcalendar.min.css') ?>">
+<link rel="stylesheet" type="text/css" href="<?= asset_assets_url('/assets/ext/jquery-fullcalendar/fullcalendar.min.css') ?>">
 
-<script src="<?= asset_url('../assets/ext/jquery-fullcalendar/fullcalendar.min.js') ?>"></script>
-<script src="<?= asset_url('../assets/ext/jquery-jeditable/jquery.jeditable.min.js') ?>"></script>
-<script src="<?= asset_url('../assets/ext/jquery-ui/jquery-ui-timepicker-addon.min.js') ?>"></script>
-<script src="<?= asset_url('../assets/js/working_plan_exceptions_modal.js') ?>"></script>
-<script src="<?= asset_url('../assets/js/backend_calendar.js') ?>"></script>
-<script src="<?= asset_url('../assets/js/backend_calendar_default_view.js') ?>"></script>
-<script src="<?= asset_url('../assets/js/backend_calendar_table_view.js') ?>"></script>
-<script src="<?= asset_url('../assets/js/backend_calendar_google_sync.js') ?>"></script>
-<script src="<?= asset_url('../assets/js/backend_calendar_appointments_modal.js') ?>"></script>
-<script src="<?= asset_url('../assets/js/backend_calendar_unavailability_events_modal.js') ?>"></script>
-<script src="<?= asset_url('../assets/js/backend_calendar_api.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/ext/jquery-fullcalendar/fullcalendar.min.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/ext/jquery-jeditable/jquery.jeditable.min.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/ext/jquery-ui/jquery-ui-timepicker-addon.min.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/js/working_plan_exceptions_modal.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/js/backend_calendar.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/js/backend_calendar_default_view.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/js/backend_calendar_table_view.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/js/backend_calendar_google_sync.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/js/backend_calendar_appointments_modal.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/js/backend_calendar_unavailability_events_modal.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/js/backend_calendar_api.js') ?>"></script>
 <script>
     var GlobalVariables = {
         csrfToken: <?= json_encode($this->security->get_csrf_hash()) ?>,

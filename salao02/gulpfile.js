@@ -87,8 +87,8 @@ gulp.task('package', (done) => {
 });
 
 gulp.task('clean', (done) => {
-    fs.removeSync('../assets/js/**/*.min.js');
-    fs.removeSync('../assets/css/**/*.min.css');
+    fs.removeSync('assets/js/**/*.min.js');
+    fs.removeSync('assets/css/**/*.min.css');
     done();
 });
 
@@ -123,34 +123,34 @@ gulp.task('docs', (done) => {
 
 gulp.task('scripts', (done) => {
     return gulp.src([
-        '../assets/js/**/*.js',
+        'assets/js/**/*.js',
         '!assets/js/**/*.min.js'
     ])
-        .pipe(plugins.changed('../assets/js/**/*'))
+        .pipe(plugins.changed('assets/js/**/*'))
         .pipe(plugins.uglify().on('error', console.log))
         .pipe(plugins.rename({suffix: '.min'}))
-        .pipe(gulp.dest('../assets/js'));
+        .pipe(gulp.dest('assets/js'));
 });
 
 gulp.task('styles', () => {
     return gulp.src([
-        '../assets/css/**/*.css',
+        'assets/css/**/*.css',
         '!assets/css/**/*.min.css'
     ])
-        .pipe(plugins.changed('../assets/css/**/*'))
+        .pipe(plugins.changed('assets/css/**/*'))
         .pipe(plugins.cleanCss())
         .pipe(plugins.rename({suffix: '.min'}))
-        .pipe(gulp.dest('../assets/css'));
+        .pipe(gulp.dest('assets/css'));
 });
 
 gulp.task('watch', (done) => {
     gulp.watch([
-        '../assets/js/**/*.js',
+        'assets/js/**/*.js',
         '!assets/js/**/*.min.js'
     ], gulp.parallel('scripts'));
 
     gulp.watch([
-        '../assets/css/**/*.css',
+        'assets/css/**/*.css',
         '!assets/css/**/*.min.css'
     ], gulp.parallel('styles'));
 

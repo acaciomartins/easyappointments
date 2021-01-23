@@ -47,7 +47,8 @@ class Installation extends EA_Controller {
         }
 
         $this->load->view('general/installation', [
-            'base_url' => config('base_url')
+            'base_url' => config('base_url'),
+            'base_assets_url' => config('base_assets_url')
         ]);
     }
 

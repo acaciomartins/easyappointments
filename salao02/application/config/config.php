@@ -28,6 +28,8 @@ $config['debug'] = Config::DEBUG_MODE;
 */
 $config['base_url'] = Config::BASE_URL;
 
+$config['base_assets_url'] = Config::BASE_ASSETS_URL;
+
 /*
 |--------------------------------------------------------------------------
 | Index File

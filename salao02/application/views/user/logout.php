@@ -8,21 +8,21 @@
 
     <title><?= lang('log_out') ?> | Easy!Appointments</title>
 
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('../assets/ext/bootstrap/css/bootstrap.min.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('../assets/css/logout.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('../assets/css/general.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/ext/bootstrap/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/css/logout.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/css/general.css') ?>">
 
-    <link rel="icon" type="image/x-icon" href="<?= asset_url('../assets/img/favicon.ico') ?>">
-    <link rel="icon" sizes="192x192" href="<?= asset_url('../assets/img/logo.png') ?>">
+    <link rel="icon" type="image/x-icon" href="<?= asset_assets_url('assets/img/favicon.ico') ?>">
+    <link rel="icon" sizes="192x192" href="<?= asset_assets_url('assets/img/logo.png') ?>">
 
     <script>
         var EALang = <?= json_encode($this->lang->language) ?>;
     </script>
 
-    <script src="<?= asset_url('../assets/ext/jquery/jquery.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/fontawesome/js/fontawesome.min.js') ?>"></script>
-    <script src="<?= asset_url('../assets/ext/fontawesome/js/solid.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/jquery/jquery.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/fontawesome/js/fontawesome.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/fontawesome/js/solid.min.js') ?>"></script>
 </head>
 <body>
 <div id="logout-frame" class="frame-container">

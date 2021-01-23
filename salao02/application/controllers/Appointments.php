@@ -103,7 +103,7 @@ class Appointments extends EA_Controller {
                     $variables = [
                         'message_title' => lang('appointment_not_found'),
                         'message_text' => lang('appointment_does_not_exist_in_db'),
-                        'message_icon' => base_url('../assets/img/error.png')
+                        'message_icon' => base_assets_url('assets/img/error.png')
                     ];
 
                     $this->load->view('appointments/message', $variables);
@@ -126,7 +126,7 @@ class Appointments extends EA_Controller {
                         'message_text' => strtr(lang('appointment_locked_message'), [
                             '{$limit}' => sprintf('%02d:%02d', $hours, $minutes)
                         ]),
-                        'message_icon' => base_url('../assets/img/error.png')
+                        'message_icon' => base_assets_url('assets/img/error.png')
                     ];
                     $this->load->view('appointments/message', $view);
                     return;
@@ -236,7 +236,7 @@ class Appointments extends EA_Controller {
         $view = [
             'message_title' => lang('appointment_cancelled_title'),
             'message_text' => lang('appointment_cancelled'),
-            'message_icon' => base_url('../assets/img/success.png')
+            'message_icon' => base_assets_url('assets/img/success.png')
         ];
 
         if (isset($exceptions))

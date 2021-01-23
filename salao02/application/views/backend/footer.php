@@ -1,6 +1,6 @@
 <div id="footer">
     <div id="footer-content" class="col-12 col-sm-8">
-        <img class="mr-1" src="<?= base_url('../assets/img/logo-16x16.png') ?>" alt="Easy!Appointments Logo">
+        <img class="mr-1" src="<?= base_assets_url('assets/img/logo-16x16.png') ?>" alt="Easy!Appointments Logo">
         <a href="https://easyappointments.org">
             Easy!Appointments
         </a>
@@ -12,7 +12,7 @@
 
         |
 
-        <img class="mx-1" src="<?= base_url('../assets/img/alextselegidis-logo-16x16.png') ?>" alt="Alex Tselegidis Logo">
+        <img class="mx-1" src="<?= base_assets_url('assets/img/alextselegidis-logo-16x16.png') ?>" alt="Alex Tselegidis Logo">
         <a href="https://alextselegidis.com">
             Alex Tselegidis
         </a>
@@ -44,8 +44,8 @@
     </div>
 </div>
 
-<script src="<?= asset_url('../assets/js/backend.js') ?>"></script>
-<script src="<?= asset_url('../assets/js/polyfill.js') ?>"></script>
-<script src="<?= asset_url('../assets/js/general_functions.js') ?>"></script>
+<script src="<?= asset_url('assets/js/backend.js') ?>"></script>
+<script src="<?= asset_url('assets/js/polyfill.js') ?>"></script>
+<script src="<?= asset_url('assets/js/general_functions.js') ?>"></script>
 </body>
 </html>

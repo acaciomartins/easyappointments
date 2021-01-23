@@ -110,6 +110,30 @@ class CI_Config {
 			$this->set_item('base_url', $base_url);
 		}
 
+		if (empty($this->config['base_assets_url']))
+		{
+			if (isset($_SERVER['SERVER_ADDR']))
+			{
+				if (strpos($_SERVER['SERVER_ADDR'], ':') !== FALSE)
+				{
+					$server_addr = '['.$_SERVER['SERVER_ADDR'].']';
+				}
+				else
+				{
+					$server_addr = $_SERVER['SERVER_ADDR'];
+				}
+
+				$base_url = (is_https() ? 'https' : 'http').'://'.$server_addr
+					.substr($_SERVER['SCRIPT_NAME'], 0, strpos($_SERVER['SCRIPT_NAME'], basename($_SERVER['SCRIPT_FILENAME'])));
+			}
+			else
+			{
+				$base_url = 'http://localhost/';
+			}
+
+			$this->set_item('base_assets_url', $base_assets_url);
+		}
+
 		log_message('info', 'Config Class Initialized');
 	}
 
@@ -305,6 +329,27 @@ class CI_Config {
 	public function base_url($uri = '', $protocol = NULL)
 	{
 		$base_url = $this->slash_item('base_url');
+
+		if (isset($protocol))
+		{
+			// For protocol-relative links
+			if ($protocol === '')
+			{
+				$base_url = substr($base_url, strpos($base_url, '//'));
+			}
+			else
+			{
+				$base_url = $protocol.substr($base_url, strpos($base_url, '://'));
+			}
+		}
+
+		return $base_url.$this->_uri_string($uri);
+	}
+
+	public function base_assets_url($uri = '', $protocol = NULL)
+
+	{
+		$base_url = $this->slash_item('base_assets_url');
 
 		if (isset($protocol))
 		{

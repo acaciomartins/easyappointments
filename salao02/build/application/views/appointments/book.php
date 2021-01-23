@@ -8,17 +8,17 @@
 
     <title><?= lang('page_title') . ' ' . $company_name ?></title>
 
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/ext/bootstrap/css/bootstrap.min.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/ext/jquery-ui/jquery-ui.min.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/ext/cookieconsent/cookieconsent.min.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/frontend.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/general.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/ext/bootstrap/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/ext/jquery-ui/jquery-ui.min.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/ext/cookieconsent/cookieconsent.min.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/css/frontend.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_assets_url('assets/css/general.css') ?>">
 
-    <link rel="icon" type="image/x-icon" href="<?= asset_url('assets/img/favicon.ico') ?>">
-    <link rel="icon" sizes="192x192" href="<?= asset_url('assets/img/logo.png') ?>">
+    <link rel="icon" type="image/x-icon" href="<?= asset_assets_url('assets/img/favicon.ico') ?>">
+    <link rel="icon" sizes="192x192" href="<?= asset_assets_url('assets/img/logo.png') ?>">
 
-    <script src="<?= asset_url('assets/ext/fontawesome/js/fontawesome.min.js') ?>"></script>
-    <script src="<?= asset_url('assets/ext/fontawesome/js/solid.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/fontawesome/js/fontawesome.min.js') ?>"></script>
+    <script src="<?= asset_assets_url('assets/ext/fontawesome/js/solid.min.js') ?>"></script>
 </head>
 
 <body>
@@ -436,6 +436,7 @@
         availableServices: <?= json_encode($available_services) ?>,
         availableProviders: <?= json_encode($available_providers) ?>,
         baseUrl: <?= json_encode(config('base_url')) ?>,
+        baseAssetsUrl: <?= json_encode(config('base_assets_url')) ?>,
         manageMode: <?= $manage_mode ? 'true' : 'false' ?>,
         customerToken: <?= json_encode($customer_token) ?>,
         dateFormat: <?= json_encode($date_format) ?>,
@@ -453,18 +454,18 @@
     var availableLanguages = <?= json_encode(config('available_languages')) ?>;
 </script>
 
-<script src="<?= asset_url('assets/js/general_functions.js') ?>"></script>
-<script src="<?= asset_url('assets/ext/jquery/jquery.min.js') ?>"></script>
-<script src="<?= asset_url('assets/ext/jquery-ui/jquery-ui.min.js') ?>"></script>
-<script src="<?= asset_url('assets/ext/cookieconsent/cookieconsent.min.js') ?>"></script>
-<script src="<?= asset_url('assets/ext/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-<script src="<?= asset_url('assets/ext/popper/popper.min.js') ?>"></script>
-<script src="<?= asset_url('assets/ext/tippy/tippy-bundle.umd.min.js') ?>"></script>
-<script src="<?= asset_url('assets/ext/datejs/date.min.js') ?>"></script>
-<script src="<?= asset_url('assets/ext/moment/moment.min.js') ?>"></script>
-<script src="<?= asset_url('assets/ext/moment/moment-timezone-with-data.min.js') ?>"></script>
-<script src="<?= asset_url('assets/js/frontend_book_api.js') ?>"></script>
-<script src="<?= asset_url('assets/js/frontend_book.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/js/general_functions.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/ext/jquery/jquery.min.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/ext/jquery-ui/jquery-ui.min.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/ext/cookieconsent/cookieconsent.min.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/ext/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/ext/popper/popper.min.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/ext/tippy/tippy-bundle.umd.min.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/ext/datejs/date.min.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/ext/moment/moment.min.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/ext/moment/moment-timezone-with-data.min.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/js/frontend_book_api.js') ?>"></script>
+<script src="<?= asset_assets_url('assets/js/frontend_book.js') ?>"></script>
 
 <script>
     $(function () {
