@@ -53,5 +53,8 @@
     "node-notifier": "^5.4.3",
     "plato": "^1.7.0",
     "zip-dir": "^1.0.2"
-  }
+  },
+  "scripts": {
+    "build": "npm install"
+
 }
