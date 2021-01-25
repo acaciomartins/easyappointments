@@ -35,7 +35,8 @@
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.31",
     "tippy.js": "^6.2.7",
-    "trumbowyg": "^2.21.0"
+    "trumbowyg": "^2.21.0",
+    "vercel": "^21.1.0"
   },
   "devDependencies": {
     "fs-extra": "^0.26.7",
