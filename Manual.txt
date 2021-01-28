@@ -1,4 +1,39 @@
+Build && Deploy
+---------------
+
 cd /home/dev/agendamentos/eagenda/easyappointments
 
 build e deploy
-sudo npx gulp build && docker cp build/ easyappointments-server:/var/www/htm
+sudo npx gulp build && docker cp build/ easyappointments-server:/var/www/html
+
+-------
+
+Criação de Database para novas agendas
+--------------------------------------
+
+Remover database
+----------------
+
+DROP DATABASE easyappointments_02;
+
+Criar novo database
+-------------------
+
+docker exec -it easyappointments-database bash
+mysql -u root -p
+
+1) Dentro do MYSQL
+
+create database easyappointments_02;
+
+2) Fora do MYSQL
+
+mysqldump -u root --password=root easyappointments | mysql -u root -p easyappointments_02
+
+------------
+
+
+URLs criadas
+
+http://localhost:8000/index.php/installation/index
+http://localhost:8000/salao02/index.php/installation/index
